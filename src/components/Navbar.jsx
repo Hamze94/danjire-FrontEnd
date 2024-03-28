@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import { CiSearch } from "react-icons/ci";
 import { CiUser } from "react-icons/ci";
 import { IoCartOutline } from "react-icons/io5";
@@ -7,12 +7,12 @@ import { useSelector } from 'react-redux';
 export default function Navbar() {
     const cartCount = useSelector((state) => state.cartReducer.length)
     return (
-        <div className='pt-4 bg-gray-100 top-0 sticky'>
-            <div className="container">
+        <div className='bg-gray-100 top-0 sticky z-50'>
+            <div className="container pt-5">
                 <div className="flex justify-between items-center">
-                    <h1 className='text-2xl font-bold  text-accent'>DANJIRE<span className=' font-thin tracking-tighter  text-red-400'>Shopping Center</span></h1>
+                    <h1 className='text-2xl font-bold text-accent'>DANJIRE<span className='font-thin tracking-tighter text-red-400'>Shopping Center</span></h1>
                     <div className="lg:flex hidden w-full max-w-[500px]">
-                        <input className=' border-2 border-accent px-6 py-2 w-full' type="text" placeholder='Baadh Alaabta' />
+                        <input className='border-2 border-accent px-6 py-2 w-full' type="text" placeholder='Baadh Alaabta' />
                         <div className="bg-accent text-white text-[26px] grid place-items-center px-4">
                             <CiSearch />
                         </div>
@@ -25,7 +25,7 @@ export default function Navbar() {
                             </div>
                             <div>
                                 <p className='text-gray-500 '>Hello, User</p>
-                                <p className=' font-medium'>Your account</p>
+                                <p className='font-medium'>Your account</p>
                             </div>
                         </div>
                         <div className="text-gray-500 text-[32px] relative">
@@ -40,7 +40,7 @@ export default function Navbar() {
                     </div>
                 </div>
                 <div className="border-b border-gray-200 pt-4" />
-                <div className=" bg-accent hidden md:block ">
+                <div className="bg-accent hidden md:block">
                     <ul className='container flex gap-8 uppercase py-4 text-white'>
                         <a href="">Home</a>
                         <a href="">shop</a>
