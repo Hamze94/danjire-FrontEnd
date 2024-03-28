@@ -1,13 +1,15 @@
 import './App.css'
-
+import { Provider } from 'react-redux'
+import { store } from './redux/store'
+import Navbar from './components/Navbar'
+import Hero from './components/Hero'
 function App() {
 
   return (
-    <>
-      <h1 className="text-3xl font-bold underline">
-        Hello world!
-      </h1>
-    </>
+    <Provider store={store}>
+      <Navbar />
+      <Hero />
+    </Provider>
   )
 }
 
