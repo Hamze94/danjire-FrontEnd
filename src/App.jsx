@@ -5,12 +5,14 @@ import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import FeatureProducts from './components/FeatureProducts'
 import Footer from './components/Footer'
+import Banner from './components/Banner'
 function App() {
 
   return (
     <Provider store={store}>
       <Navbar />
       <Hero />
+      <Banner />
       <FeatureProducts />
       <Footer />
     </Provider>

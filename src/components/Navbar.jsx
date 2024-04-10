@@ -3,17 +3,24 @@ import { CiSearch } from "react-icons/ci";
 import { CiUser } from "react-icons/ci";
 import { IoCartOutline } from "react-icons/io5";
 import { useSelector } from 'react-redux';
+import logo from '../assets/1.png'
+
 
 export default function Navbar() {
     const cartCount = useSelector((state) => state.cartReducer.length)
     return (
-        <div className='bg-gray-100 top-0 sticky z-50'>
+        <nav className='bg-gray-100 top-0 sticky z-50'>
             <div className="container pt-5">
-                <div className="flex justify-between items-center">
-                    <h1 className='text-2xl font-bold text-accent'>DANJIRE<span className='font-thin tracking-tighter text-red-400'>Shopping Center</span></h1>
-                    <div className="lg:flex hidden w-full max-w-[500px]">
+                <div className="justify-between gap-2 items-center grid grid-cols-1 md w-full  md:grid-cols-2 lg:grid-cols-3">
+                    <div>
+                        <a href="#" className='font-bold text-2xl sm:text-3xl  flex gap-2'>
+                            <img src={logo} alt="" srcset="" className='w-10' />
+                            Danjire <span className=' tracking-tighter text-2xl sm:text-3xl font-thin text-accent'>Grocery</span>
+                        </a>
+                    </div>
+                    <div className="lg:flex  w-full max-w-[500px]">
                         <input className='border-2 border-accent px-6 py-2 w-full' type="text" placeholder='Baadh Alaabta' />
-                        <div className="bg-accent text-white text-[26px] grid place-items-center px-4">
+                        <div className="bg-accent text-white text-[26px] grid place-items-center px-">
                             <CiSearch />
                         </div>
                     </div>
@@ -40,15 +47,16 @@ export default function Navbar() {
                     </div>
                 </div>
                 <div className="border-b border-gray-200 pt-4" />
-                <div className="bg-accent hidden md:block">
-                    <ul className='container flex gap-8 uppercase py-4 text-white'>
+
+                <div class="bg-accent flex overflow-x-auto md:overflow-x-hidden">
+                    <ul class="container flex gap-8 uppercase py-4 text-white">
                         <a href="">Home</a>
-                        <a href="">shop</a>
-                        <a href="">contact us</a>
-                        <a href="">about us</a>
+                        <a href="">Shop</a>
+                        <a href="">Contact Us</a>
+                        <a href="">About Us</a>
                     </ul>
                 </div>
             </div>
-        </div>
+        </nav>
     )
 }

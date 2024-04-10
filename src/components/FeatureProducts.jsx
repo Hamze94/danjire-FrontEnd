@@ -33,14 +33,44 @@ const FeatureProducts = () => {
             image: '/potato.png',
             price: '$20.99',
         },
+        {
+            id: 1,
+            name: 'Product 1',
+            image: '/orange.png',
+            price: '$10.99',
+        },
+        {
+            id: 2,
+            name: 'Product 2',
+            image: '/carrot.png',
+            price: '$12.99',
+        },
+        {
+            id: 3,
+            name: 'Product 3',
+            image: '/banana.png',
+            price: '$15.99',
+        },
+        {
+            id: 4,
+            name: 'Product 4',
+            image: '/tomato.png',
+            price: '$18.99',
+        },
+        {
+            id: 5,
+            name: 'Product 5',
+            image: '/potato.png',
+            price: '$20.99',
+        },
     ];
 
     return (
-        <div className="container mx-auto mt-8 pt-16"> {/* Add pt-16 class for padding top */}
+        <div className="container mx-auto mt-0 pt-16">
             <h2 className="text-3xl font-bold mb-6">Featured Products</h2>
-            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
+            <div className="grid grid-cols-1  sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 mb-5">
                 {products.map(product => (
-                    <div key={product.id} className="bg-white rounded-lg overflow-hidden shadow-md transform transition-transform hover:scale-105 relative z-10">
+                    <div key={product.id} className="bg-white   overflow-hidden shadow-md transform transition-transform hover:scale-105 relative z-10">
                         <img src={product.image} alt={product.name} className="w-full h-48 object-cover" />
                         <div className="p-4">
                             <h3 className="text-lg font-semibold mb-2">{product.name}</h3>

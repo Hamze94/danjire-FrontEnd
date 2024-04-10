@@ -2,8 +2,8 @@ import React from 'react'
 
 export default function Hero() {
     return (
-        <div className="bg-gray-100 -mt-20">
-            <div className="container mx-auto flex flex-col lg:flex-row items-center justify-between bg-white p-8 rounded-lg shadow-md">
+        <div className="bg-gray-100 -mt-10">
+            <div className="container mx-auto flex flex-col lg:flex-row items-center justify-between bg-white p-8 shadow-md">
                 <div className="lg:w-1/2 flex flex-col lg:pl-12 mb-8 lg:mb-0">
                     <div>
                         <h1 className="text-3xl lg:text-4xl xl:text-5xl font-bold mb-4">Welcome to Our Store</h1>
@@ -14,8 +14,8 @@ export default function Hero() {
                         </div>
                     </div>
                 </div>
-                <div className="lg:w-1/2">
-                    <div className="bg-white overflow-hidden">
+                <div className="lg:w-1/2 ">
+                    <div className="bg-white  overflow-hidden">
                         <img src="/card1.png" alt="Hero" className="w-full" />
                     </div>
                 </div>
