@@ -13,14 +13,14 @@ export default function Navbar() {
             <div className="container pt-5">
                 <div className="justify-between gap-2 items-center grid grid-cols-1 md w-full  md:grid-cols-2 lg:grid-cols-3">
                     <div>
-                        <a href="#" className='font-bold text-2xl sm:text-3xl  flex gap-2'>
-                            <img src={logo} alt="" srcset="" className='w-10' />
+                        <a href="/" className='font-bold text-2xl sm:text-3xl   flex gap-2'>
+                            <img src={logo} alt="" srcSet="" className='w-10' />
                             Danjire <span className=' tracking-tighter text-2xl sm:text-3xl font-thin text-accent'>Grocery</span>
                         </a>
                     </div>
-                    <div className="lg:flex  w-full max-w-[500px]">
-                        <input className='border-2 border-accent px-6 py-2 w-full' type="text" placeholder='Baadh Alaabta' />
-                        <div className="bg-accent text-white text-[26px] grid place-items-center px-">
+                    <div className="lg:flex  w-full max-w-full  rounded-md">
+                        <input className='border-2 rounded-l-lg  border-accent px-6 py-2 w-full' type="text" placeholder='Baadh Alaabta' />
+                        <div className="bg-accent rounded-r-lg   text-white text-[26px] grid place-items-center ">
                             <CiSearch />
                         </div>
                     </div>
@@ -48,8 +48,8 @@ export default function Navbar() {
                 </div>
                 <div className="border-b border-gray-200 pt-4" />
 
-                <div class="bg-accent flex overflow-x-auto md:overflow-x-hidden">
-                    <ul class="container flex gap-8 uppercase py-4 text-white">
+                <div className="bg-accent flex overflow-x-auto md:overflow-x-hidden rounded-md">
+                    <ul className="container flex gap-8 uppercase py-4 text-white">
                         <a href="">Home</a>
                         <a href="">Shop</a>
                         <a href="">Contact Us</a>
